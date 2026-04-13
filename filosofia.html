@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Filosofia.css" />
+    
+    <title>Filosofia Institucional</title>
+</head>
+<body>
+    
+
+<nav class="navbar">
+  <div class="logo">
+    <img src="imagenes/IMSS-Logo-tm.png" alt="Logo Seguro Social">
+  </div>
+
+  <!-- Botón hamburguesa -->
+  <input type="checkbox" id="menu-toggle">
+  <label for="menu-toggle" class="hamburger">
+    <span></span>
+    <span></span>
+    <span></span>
+  </label>
+
+  <!-- Menú -->
+  <ul class="nav-links">
+  <li><a href="index.html" class="link">Bienvenida</a></li>
+  <li><a href="filosofia.html" class="link">Filosofía Institucional</a></li>
+  <li><a href="modelo.html" class="link">Modelo Institucional MC</a></li>
+  <li><a href="poblacion.html" class="link">Población Derechohabiente</a></li>
+
+  <li class="dropdown">
+    <a href="#">Conociendo las Instalaciones</a>
+    <ul class="submenu">
+      <li><a href="cartera.html">Cartera de Servicios</a></li>
+      <li><a href="recorrido.html">Recorrido Virtual</a></li>
+      <li><a href="organigrama.html">Organigrama</a></li>
+    </ul>
+  </li>
+
+  <li><a href="buzon.html" class="link">Buzón</a></li>
+</ul>
+</nav>
+
+<br>
+<br>
+
+
+
+
+
+  <section class="services">
+    
+    <!-- FILA 1 -->
+    <div class="service-box">
+        <img src="imagenes/IMSS-Logo-tm.png">
+        <h3>MISIÓN</h3>
+        <p>OTORGAR ATENCIÓN MÉDICA INTEGRAL DE CALIDAD CON SENTIDO HUMANO Y EFICIENCIA.</p>
+    </div>
+
+    <div class="service-box">
+        <img src="imagenes/IMSS-Logo-tm.png">
+        <h3>VISIÓN</h3>
+        <p>SER EL MEJOR HOSPITAL DEL ESTADO DE TLAXCALA.</p>
+    </div>
+
+    <!-- FILA 2 -->
+    <div class="service-box">
+        <img src="imagenes/IMSS-Logo-tm.png">
+        <h3>VALORES</h3>
+        <p>Ética</p>
+        <p>Lealtad</p>
+        <p>Responsabilidad</p>
+        <p>Honestidad</p>
+        <p>Pertenencia</p>
+    </div>
+
+    <div class="service-box">
+        <img src="imagenes/IMSS-Logo-tm.png">
+        <h3>POLITICA DE CALIDAD</h3>
+        <p>CONSEGUIR UNA ALTA SATISFACCIÓN EN LA POBLACIÓN DERECHOHABIENTE Y/O USUARIA PARA LOGRAR UNA MEJOR EFICIENCIA EN LOS SERVICIOS PRESTADOS</p>
+    </div>
+
+</section>
+
+
+
+<div class="volver-inicio-container">
+    <a href="index.html" class="btn-volver">Volver al inicio</a>
+</div>
+
+
+   
+
+    
+    <footer>
+  <div class="footer-container">
+    <div class="footer-logo">
+      <h2></h2>
+      <p></p>
+    </div>
+
+   
+
+    <div class="footer-contact">
+      <h4>Contáctanos</h4>
+     <p>📧 <a href="http://www.imss.gob.mx/" class="link-imss">http://www.imss.gob.mx/</a></p>
+      <p>📞 +52 2414172100</p>
+      <p>📍 San Martin de Porres, San Martín de Porres, 90337 Cdad. de Apizaco, Tlax.</p>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <div class="footer-social">
+      
+      <a href="#"><img src="imagenes/IMSS-Logo-tm.png" alt="Instagram"></a>
+     
+    </div>
+    <p>&copy; 2025 H.G.Z. C/M.F. No. 2, Todos los derechos reservados.</p>
+  </div>
+</footer>
+
+
+
+<script>
+window.onload = function() {
+    window.scrollTo(0, 0);
+};
+</script>
+
+
+
+<script>
+const navbar = document.querySelector('.navbar');
+const menuToggle = document.getElementById('menu-toggle');
+const navLinks = document.querySelector('.nav-links');
+
+let lastScrollTop = 0;
+
+// -------------------- AUTOHIDE NAVBAR --------------------
+window.addEventListener('scroll', function() {
+    let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+    if (scrollTop > lastScrollTop && scrollTop > 50) {
+        // Scroll down → oculta navbar
+        navbar.style.top = "-100px";
+    } else {
+        // Scroll up → muestra navbar
+        navbar.style.top = "0";
+    }
+
+    lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
+});
+
+// -------------------- CERRAR MENU AL HACER CLICK FUERA --------------------
+document.addEventListener('click', function(event) {
+    // Si el menú está abierto y el clic no es dentro del navbar ni del toggle
+    if (menuToggle.checked && !navbar.contains(event.target)) {
+        menuToggle.checked = false; // cierra el menú
+    }
+});
+</script>
+
+
+<!-- Botón de subir -->
+<button id="scrollToTop" title="Volver arriba">↑</button>
+
+<script>
+const scrollBtn = document.getElementById('scrollToTop');
+
+// Mostrar el botón después de cierto scroll
+window.addEventListener('scroll', () => {
+    if (window.scrollY > 300) {
+        scrollBtn.style.display = 'block';
+    } else {
+        scrollBtn.style.display = 'none';
+    }
+});
+
+// Acción de hacer scroll al top al hacer clic
+scrollBtn.addEventListener('click', () => {
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth' // desplazamiento suave
+    });
+});
+</script>
+
+
+
+
+
+</body>
+</html>

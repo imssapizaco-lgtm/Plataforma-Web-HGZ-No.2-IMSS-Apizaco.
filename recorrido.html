@@ -1,0 +1,934 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Estructura.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"/>
+    <title>Recorrido Virtual</title>
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar">
+    <div class="logo">
+        <img src="imagenes/IMSS-Logo-tm.png" alt="Logo Seguro Social">
+    </div>
+
+    <input type="checkbox" id="menu-toggle">
+    <label for="menu-toggle" class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+    </label>
+
+   <ul class="nav-links">
+  <li><a href="index.html" class="link">Bienvenida</a></li>
+  <li><a href="filosofia.html" class="link">Filosofía Institucional</a></li>
+  <li><a href="modelo.html" class="link">Modelo Institucional MC</a></li>
+  <li><a href="poblacion.html" class="link">Población Derechohabiente</a></li>
+
+  <li class="dropdown">
+    <a href="#">Conociendo las Instalaciones</a>
+    <ul class="submenu">
+      <li><a href="cartera.html">Cartera de Servicios</a></li>
+      <li><a href="recorrido.html">Recorrido Virtual</a></li>
+      <li><a href="organigrama.html">Organigrama</a></li>
+    </ul>
+  </li>
+
+  <li><a href="buzon.html" class="link">Buzón</a></li>
+</ul>
+</nav>
+
+    <!-- PAGE CONTENT -->
+    <div class="container-fluid my-4 page-content">
+        <section id="featured" class="content-section">
+            <div class="section-heading text-center mb-4">
+                <h1>RECORRIDO VIRTUAL</h1>
+                <p><br> Hospital General Zona con Medicina Familiar No.2 (H.G.Z. C/M.F. No. 2)</p>
+            </div>
+
+            <div class="owl-carousel owl-theme">
+                <!-- Departamento de Personal -->
+                <div class="item text-center">
+                    <div class="image">
+                        <img src="imagenes/Personal.jpeg" class="img-fluid rounded mb-2" alt="Departamento de Personal">
+                        <div class="featured-button button">
+                            <a href="#" class="abrirModalBtn" data-modal="modalPersonal">Departamento de Personal y Relaciones Contractuales </a>
+                            <a href="#" class="" data-modal="">Planta Baja </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Departamento de Nutrición -->
+                <div class="item text-center">
+                    <div class="image">
+                        <img src="imagenes/Nutricion.jpeg" class="img-fluid rounded mb-2" alt="Nutrición">
+                        <div class="featured-button button">
+                            <a href="#" class="abrirModalBtn" data-modal="modalNutricion">Departamento de Nutrición y Dietética</a>
+                            <a href="#" class="" data-modal="">Planta Baja </a>
+                        </div>
+                    </div>
+                </div>
+
+                
+                <!-- Departamento de Conservacion -->
+                <div class="item text-center">
+                    <div class="image">
+                        <img src="imagenes/Conservacion.jpeg" class="img-fluid rounded mb-2" alt="Departamento de Conservación">
+                        <div class="featured-button button">
+                            <a href="#" class="abrirModalBtn" data-modal="modalConservacion">Departamento de Conservación</a>
+                            <a href="#" class="" data-modal="">Planta Baja </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Departamento de Servicios Generales -->
+                <div class="item text-center">
+                    <div class="image">
+                        <img src="imagenes/Subdireccionadministrattiva.jpeg" class="img-fluid rounded mb-2" alt="Departamento de Servicios Generales">
+                        <div class="featured-button button">
+                            <a href="#" class="abrirModalBtn" data-modal="modalServiciosGenerales">Departamento de Servicios Generales</a>
+                            <a href="#" class="" data-modal="">Planta Alta </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Departamento de Abastos -->
+                <div class="item text-center">
+                    <div class="image">
+                        <img src="imagenes/Subdireccionadministrattiva.jpeg" class="img-fluid rounded mb-2" alt="Departamento de Abastos">
+                        <div class="featured-button button">
+                            <a href="#" class="abrirModalBtn" data-modal="modalAbastos">Departamento de Abasto</a>
+                            <a href="#" class="" data-modal="">Planta Alta </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Departamento de Finanzas y Sistemas-->
+                <div class="item text-center">
+                    <div class="image">
+                        <img src="imagenes/Finanzas.jpeg" class="img-fluid rounded mb-2" alt="Departamento de Finanzas y Sistemas">
+                        <div class="featured-button button">
+                            <a href="#" class="abrirModalBtn" data-modal="modalFinanzas">Departamento de Finanzas y Sistemas</a>
+                            <a href="#" class="" data-modal="">Planta Alta </a>
+                        </div>
+                    </div>
+                </div>
+
+                    <!-- Direccion-->
+                <div class="item text-center">
+                    <div class="image">
+                        <img src="imagenes/Direccion.jpeg" class="img-fluid rounded mb-2" alt="Direccion">
+                        <div class="featured-button button">
+                            <a href="#" class="abrirModalBtn" data-modal="modalDireccion">Dirección</a>
+                            <br>
+                            <a href="#" class="" data-modal="">Planta Alta </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Subdireccion Medica-
+                <div class="item text-center">
+                    <div class="image">
+                        <img src="imagenes/" class="img-fluid rounded mb-2" alt="Subdirección Medica">
+                        <div class="featured-button button">
+                            <a href="#" class="abrirModalBtn" data-modal="modalSubMedica">Subdirección Médica</a>
+                        </div>
+                    </div>
+                </div> -->
+
+                <!-- Subdireccion Administrativa-->
+                <div class="item text-center">
+                    <div class="image">
+                        <img src="imagenes/Subdireccionadministrattiva.jpeg" class="img-fluid rounded mb-2" alt="Subdirección Administrativa">
+                        <div class="featured-button button">
+                            <a href="#" class="abrirModalBtn" data-modal="modalSubAdmin">Subdirección Administrativa</a>
+                            <a href="#" class="" data-modal="">Planta Alta </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Jefatura de Trabajo Social-->
+                <div class="item text-center">
+                    <div class="image">
+                        <img src="imagenes/Direccion.jpeg" class="img-fluid rounded mb-2" alt="Jefatura de Trabajo Social">
+                        <div class="featured-button button">
+                            <a href="#" class="abrirModalBtn" data-modal="modalJefaturaSocial">Jefatura de Trabajo Social</a>
+                            <a href="#" class="" data-modal="">Planta Alta </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Jefatura de Medicina Familiar-->
+                <div class="item text-center">
+                    <div class="image">
+                        <img src="imagenes/Jeaturamedicinafamiliar.jpeg" class="img-fluid rounded mb-2" alt="Jefatura de Medicina Familiar">
+                        <div class="featured-button button">
+                            <a href="#" class="abrirModalBtn" data-modal="modalJefaturaFamiliar">Jefatura de Medicina Familiar</a>
+                            <a href="#" class="" data-modal="">Planta Baja </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Laboratorio-->
+                <div class="item text-center">
+                    <div class="image">
+                        <img src="imagenes/Laboratorio.jpeg" class="img-fluid rounded mb-2" alt="Laboratorio">
+                        <div class="featured-button button">
+                            <a href="#" class="abrirModalBtn" data-modal="modalLaboratorio">Laboratorio Clínico</a>
+                            <a href="#" class="" data-modal="">Planta Baja </a>
+                        </div>
+                    </div>
+                </div>
+
+                
+                <!-- Radio-->
+                <div class="item text-center">
+                    <div class="image">
+                        <img src="imagenes/Rayosx.jpeg" class="img-fluid rounded mb-2" alt="Servicio de Radiodiagnóstico">
+                        <div class="featured-button button">
+                            <a href="#" class="abrirModalBtn" data-modal="modalRadio">Servicio de Radiodiagnóstico</a>
+                            <a href="#" class="" data-modal="">Planta Baja </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Departamento de Enfermeria-->
+                <div class="item text-center">
+                    <div class="image">
+                        <img src="imagenes/JefaturaEnfermeria.jpeg" class="img-fluid rounded mb-2" alt="Departamento de Enfermería">
+                        <div class="featured-button button">
+                            <a href="#" class="abrirModalBtn" data-modal="modalEnfermeria">Departamento de Enfermería </a>
+                            <a href="#" class="" data-modal="">Planta Baja</a>
+                        </div>
+                    </div>
+                </div>
+
+                
+                <!-- Coordinacion de Clinica de Cirugia-->
+                <div class="item text-center">
+                    <div class="image">
+                        <img src="imagenes/CoordiacionHospQuiro.jpeg" class="img-fluid rounded mb-2" alt="Coordinacion de Clínica de Cirugia">
+                        <div class="featured-button button">
+                            <a href="#" class="abrirModalBtn" data-modal="modalCirugia">Coordinacion de Clínica de Cirugía </a>
+                            <a href="#" class="" data-modal="">Planta Baja</a>
+                        </div>
+                    </div>
+                </div>
+
+                
+
+                <!-- Coordinacion de Clinica de Medicina
+                <div class="item text-center">
+                    <div class="image">
+                        <img src="imagenes/" class="img-fluid rounded mb-2" alt=" Coordinacion de Clínica de Medicina">
+                        <div class="featured-button button">
+                            <a href="#" class="abrirModalBtn" data-modal="modalMedicina">Coordinacion de Clínica de Medicina </a>
+                        </div>
+                    </div>
+                </div>-->
+
+                
+
+                <!-- Quirofano-->
+                <div class="item text-center">
+                    <div class="image">
+                        <img src="imagenes/Quirofano1.jpeg" class="img-fluid rounded mb-2" alt="Quirófano">
+                        <div class="featured-button button">
+                            <a href="#" class="abrirModalBtn" data-modal="modalQuirofano">Quirófano </a>
+                            <a href="#" class="" data-modal="">Planta Baja </a>
+                        </div>
+                    </div>
+                </div>
+
+                
+                <!-- Urgencias-->
+                <div class="item text-center">
+                    <div class="image">
+                        <img src="imagenes/Urgencias.jpeg" class="img-fluid rounded mb-2" alt="Urgencias">
+                        <div class="featured-button button">
+                            <a href="#" class="abrirModalBtn" data-modal="modalUrgencias">Urgencias </a>
+                            <a href="#" class="" data-modal="">Planta Baja </a>
+                        </div>
+                    </div>
+                </div>
+
+                
+
+                <!-- Consulta de Medicina Familiar 
+                <div class="item text-center">
+                    <div class="image">
+                        <img src="imagenes/" class="img-fluid rounded mb-2" alt=" Consulta de Medicina Familiar">
+                        <div class="featured-button button">
+                            <a href="#" class="abrirModalBtn" data-modal="modalMedicinaFamiliar">Consulta de Medicina Familiar </a>
+                        </div>
+                    </div>
+                </div> -->
+
+
+                
+                <!-- Consulta de Especialidades-->
+                <div class="item text-center">
+                    <div class="image">
+                        <img src="imagenes/Especialidades.jpeg" class="img-fluid rounded mb-2" alt="Consulta de Especialidades">
+                        <div class="featured-button button">
+                            <a href="#" class="abrirModalBtn" data-modal="modalEspecialidades">Consulta de Especialidades </a>
+                            <a href="#" class="" data-modal="">Planta Baja </a>
+                        </div>
+                    </div>
+                </div>
+
+                
+                
+
+                <!-- Farmacia -->
+                <div class="item text-center">
+                    <div class="image">
+                        <img src="imagenes/Farmacia.jpeg" class="img-fluid rounded mb-2" alt="Farmacia">
+                        <div class="featured-button button">
+                            <a href="#" class="abrirModalBtn" data-modal="modalFarmacia">Farmacia</a>
+                            <br>
+                            <a href="#" class="" data-modal="">Planta Baja </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Almacen -->
+                <div class="item text-center">
+                    <div class="image">
+                        <img src="imagenes/Almacen.jpeg" class="img-fluid rounded mb-2" alt="Almacén">
+                        <div class="featured-button button">
+                            <a href="#" class="abrirModalBtn" data-modal="modalAlmacen">Almacén</a>
+                            <br>
+                            <a href="#" class="" data-modal="">Planta Baja </a>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                
+                <!-- Casa de Maquinas -->
+                <div class="item text-center">
+                    <div class="image">
+                        <img src="imagenes/CasaMaquinas.jpeg" class="img-fluid rounded mb-2" alt="Casa de Maquinas">
+                        <div class="featured-button button">
+                            <a href="#" class="abrirModalBtn" data-modal="modalMaquinas">Casa de Maquinas</a>
+                            <a href="#" class="" data-modal="">Planta Baja </a>
+                        </div>
+                    </div>
+                </div>
+
+
+                    <!-- Coordinacion de Asistentes Medicas -->
+                <div class="item text-center">
+                    <div class="image">
+                        <img src="imagenes/Coordinacionasistentes.jpeg" class="img-fluid rounded mb-2" alt="Coordinación de Asistentes Médicas">
+                        <div class="featured-button button">
+                            <a href="#" class="abrirModalBtn" data-modal="modalAsistentes"> Coordinación de Asistentes Médicas</a>
+                            <a href="#" class="" data-modal="">Planta Baja </a>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- Coordinacion de Educacion e Investigacion en Salud -->
+                <div class="item text-center">
+                    <div class="image">
+                        <img src="imagenes/Enseñanza.jpeg" class="img-fluid rounded mb-2" alt="Coordinacion de Educación e Investigación en Salud">
+                        <div class="featured-button button">
+                            <a href="#" class="abrirModalBtn" data-modal="modalEducacion"> Coordinacion de Educación e Investigación en Salud</a>
+                            <a href="#" class="" data-modal="">Planta Baja </a>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+                <!-- Roperia-->
+                <div class="item text-center">
+                    <div class="image">
+                        <img src="imagenes/Roperia.jpeg" class="img-fluid rounded mb-2" alt="Ropería">
+                        <div class="featured-button button">
+                            <a href="#" class="abrirModalBtn" data-modal="modalRoperia"> Ropería</a>
+                            <br>
+                            <a href="#" class="" data-modal="">Planta Baja </a>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                
+                <!-- ADEC-->
+                <div class="item text-center">
+                    <div class="image">
+                        <img src="imagenes/ADEC.jpeg" class="img-fluid rounded mb-2" alt="ADEC">
+                        <div class="featured-button button">
+                            <a href="#" class="abrirModalBtn" data-modal="modalADEC"> ADEC</a>
+                            <br>
+                            <a href="#" class="" data-modal="">Planta Baja </a>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                <!-- Dental -->
+                <div class="item text-center">
+                    <div class="image">
+                        <img src="imagenes/Dental.jpeg" class="img-fluid rounded mb-2" alt="Estomatología">
+                        <div class="featured-button button">
+                            <a href="#" class="abrirModalBtn" data-modal="modalDental">Estomatología</a>
+                            <a href="#" class="" data-modal="">Planta Alta </a>
+                        </div>
+                    </div>
+                </div>
+
+            
+            
+                <!-- Archivo -->
+                <div class="item text-center">
+                    <div class="image">
+                        <img src="imagenes/Archivo.jpeg" class="img-fluid rounded mb-2" alt="A.R.I.M.A.C.">
+                        <div class="featured-button button">
+                            <a href="#" class="abrirModalBtn" data-modal="modalArchivo">A.R.I.M.A.C.</a>
+                            <a href="#" class="" data-modal="">Planta Baja </a>
+                        </div>
+                    </div>
+                </div>
+
+            
+            
+            </div>
+        </section>
+    </div>
+
+
+
+
+
+
+
+
+    <!-- MODALES -->
+    <div id="modalPersonal" class="modal">
+        <div class="modal-content">
+            <span class="cerrar">&times;</span>
+            <h2>Departamento de Personal y Relaciones Contractuales</h2>
+            <img src="imagenes/Personal.jpeg" class="img-fluid rounded mb-3" alt="Departamento de Personal">
+            <p></p>
+        </div>
+    </div>
+
+    <div id="modalNutricion" class="modal">
+        <div class="modal-content">
+            <span class="cerrar">&times;</span>
+            <h2>Departamento de Nutrición y Dietetica </h2>
+            <img src="imagenes/Nutricion.jpeg" class="img-fluid rounded mb-3" alt="Departamento de Nutrición y Dietetica">
+            <p></p>
+        </div>
+    </div>
+
+    <div id="modalConservacion" class="modal">
+        <div class="modal-content">
+            <span class="cerrar">&times;</span>
+            <h2>Departamento de Conservación </h2>
+            <img src="imagenes/Conservacion.jpeg" class="img-fluid rounded mb-3" alt="Departamento de Conservación">
+            <p></p>
+        </div>
+    </div>
+
+    <div id="modalServiciosGenerales" class="modal">
+        <div class="modal-content">
+            <span class="cerrar">&times;</span>
+            <h2>Departamento de Servicios Generales </h2>
+            <img src="imagenes/Subdireccionadministrattiva.jpeg" class="img-fluid rounded mb-3" alt="Departamento de Servicios Generales">
+            <p></p>
+        </div>
+    </div>
+
+    <div id="modalAbastos" class="modal">
+        <div class="modal-content">
+            <span class="cerrar">&times;</span>
+            <h2>Departamento de Abastos</h2>
+            <img src="imagenes/Subdireccionadministrattiva.jpeg" class="img-fluid rounded mb-3" alt="Departamento de Abastos">
+            <p></p>
+        </div>
+    </div>
+
+    <div id="modalFinanzas" class="modal">
+        <div class="modal-content">
+            <span class="cerrar">&times;</span>
+            <h2>Departamento de Finanzas y Sistemas</h2>
+            <img src="imagenes/Finanzas.jpeg" class="img-fluid rounded mb-3" alt="Departamento de Finanzas y Sistemas">
+            <p></p>
+        </div>
+    </div>
+
+    <div id="modalDireccion" class="modal">
+        <div class="modal-content">
+            <span class="cerrar">&times;</span>
+            <h2>Direccion</h2>
+            <img src="imagenes/Direccion.jpeg" class="img-fluid rounded mb-3" alt="Direccion">
+            <p></p>
+        </div>
+    </div>
+
+
+    <!--  <div id="modalSubMedica" class="modal">
+        <div class="modal-content">
+            <span class="cerrar">&times;</span>
+            <h2>Subdireccion Medica</h2>
+            <img src="imagenes/" class="img-fluid rounded mb-3" alt="Subdireccion Medica">
+            <p></p>
+        </div>
+    </div> -->
+
+
+    <div id="modalSubAdmin" class="modal">
+        <div class="modal-content">
+            <span class="cerrar">&times;</span>
+            <h2>Subdireccion Administrativa</h2>
+            <img src="imagenes/Subdireccionadministrattiva.jpeg" class="img-fluid rounded mb-3" alt="Subdireccion Administrativa">
+            <p></p>
+        </div>
+    </div>
+
+    <div id="modalJefaturaSocial" class="modal">
+        <div class="modal-content">
+            <span class="cerrar">&times;</span>
+            <h2>Jefatura de Trabajo Social</h2>
+            <img src="imagenes/Direccion.jpeg" class="img-fluid rounded mb-3" alt="Jefatura de Trabajo Social">
+            <p></p>
+        </div>
+    </div>
+
+
+    <div id="modalJefaturaFamiliar" class="modal">
+        <div class="modal-content">
+            <span class="cerrar">&times;</span>
+            <h2>Jefatura de Medicina Familiar </h2>
+            <img src="imagenes/Jeaturamedicinafamiliar.jpeg" class="img-fluid rounded mb-3" alt="Jefatura de Medicina Familiar">
+            <p></p>
+        </div>
+    </div>
+
+
+    <div id="modalLaboratorio" class="modal">
+        <div class="modal-content">
+            <span class="cerrar">&times;</span>
+            <h2>Laboratorio </h2>
+            <img src="imagenes/Laboratorio.jpeg" class="img-fluid rounded mb-3" alt="Laboratorio">
+            <p></p>
+        </div>
+    </div>
+
+
+    <div id="modalRadio" class="modal">
+        <div class="modal-content">
+            <span class="cerrar">&times;</span>
+            <h2>Servicio de Radiodiagnóstico</h2>
+            <img src="imagenes/Rayosx.jpeg" class="img-fluid rounded mb-3" alt="Servicio de Radiodiagnóstico">
+            <p></p>
+        </div>
+    </div>
+
+
+
+    <div id="modalEnfermeria" class="modal">
+        <div class="modal-content">
+            <span class="cerrar">&times;</span>
+            <h2>Departamento de Enfermeria</h2>
+            <img src="imagenes/JefaturaEnfermeria.jpeg" class="img-fluid rounded mb-3" alt="Departamento de Enfermeria">
+            <p></p>
+        </div>
+    </div>
+
+
+
+    <div id="modalCirugia" class="modal">
+        <div class="modal-content">
+            <span class="cerrar">&times;</span>
+            <h2>Coordinacion Clinica de Cirugia</h2>
+            <img src="imagenes/CoordiacionHospQuiro.jpeg" class="img-fluid rounded mb-3" alt="Coordinacion Clinica de Cirugia">
+            <p></p>
+        </div>
+    </div>
+
+
+
+
+
+    <div id="modalQuirofano" class="modal">
+        <div class="modal-content">
+            <span class="cerrar">&times;</span>
+            <h2>Quirófano </h2>
+            <img src="imagenes/Quirofano2.jpeg" class="img-fluid rounded mb-3" alt="Quirofano">
+            <p></p>
+        </div>
+    </div>
+
+
+
+    <div id="modalUrgencias" class="modal">
+        <div class="modal-content">
+            <span class="cerrar">&times;</span>
+            <h2>Urgencias</h2>
+            <img src="imagenes/Urgencias1.jpeg" class="img-fluid rounded mb-3" alt="Urgencias">
+            <p></p>
+        </div>
+    </div>
+
+
+
+    <!-- <div id="modalMedicinaFamiliar" class="modal">
+        <div class="modal-content">
+            <span class="cerrar">&times;</span>
+            <h2>Consulta de Medicina Familiar</h2>
+            <img src="imagenes/" class="img-fluid rounded mb-3" alt="Consulta de Medicina Familiar">
+            <p></p>
+        </div>
+    </div> -->
+
+
+
+
+    <div id="modalEspecialidades" class="modal">
+        <div class="modal-content">
+            <span class="cerrar">&times;</span>
+            <h2>Consulta de Especialidades</h2>
+            <img src="imagenes/Especialidades.jpeg" class="img-fluid rounded mb-3" alt="Consulta de Especialidades">
+            <p></p>
+        </div>
+    </div>
+
+
+
+
+    <div id="modalFarmacia" class="modal">
+        <div class="modal-content">
+            <span class="cerrar">&times;</span>
+            <h2>Farmacia</h2>
+            <img src="imagenes/Farmacia.jpeg" class="img-fluid rounded mb-3" alt="Farmacia">
+            <p></p>
+        </div>
+    </div>
+
+    <div id="modalAlmacen" class="modal">
+        <div class="modal-content">
+            <span class="cerrar">&times;</span>
+            <h2>Almacén</h2>
+            <img src="imagenes/Almacen.jpeg" class="img-fluid rounded mb-3" alt="Almacen">
+            <p></p>
+        </div>
+    </div>
+
+
+    <div id="modalMaquinas" class="modal">
+        <div class="modal-content">
+            <span class="cerrar">&times;</span>
+            <h2>Casa de Maquinas</h2>
+            <img src="imagenes/CasaMaquinas.jpeg" class="img-fluid rounded mb-3" alt="Casa de Maquinas">
+            <p></p>
+        </div>
+    </div>
+
+
+
+    <div id="modalAsistentes" class="modal">
+        <div class="modal-content">
+            <span class="cerrar">&times;</span>
+            <h2>Coordinacion de Asistentes Medicas</h2>
+            <img src="imagenes/Coordinacionasistentes.jpeg" class="img-fluid rounded mb-3" alt="Coordinacion de Asistentes Medicas">
+            <p></p>
+        </div>
+    </div>
+
+
+
+
+    <div id="modalEducacion" class="modal">
+        <div class="modal-content">
+            <span class="cerrar">&times;</span>
+            <h2>Coordinacion de Educacion e Investigacion en Salud</h2>
+            <img src="imagenes/Enseñanza.jpeg" class="img-fluid rounded mb-3" alt="Coordinacion de Educacion e Investigacion en Salud">
+            <p></p>
+        </div>
+    </div>
+
+
+
+
+
+    <div id="modalRoperia" class="modal">
+        <div class="modal-content">
+            <span class="cerrar">&times;</span>
+            <h2>Roperia</h2>
+            <img src="imagenes/Roperia.jpeg" class="img-fluid rounded mb-3" alt="Roperia">
+            <p></p>
+        </div>
+    </div>
+
+
+
+
+    <div id="modalADEC" class="modal">
+        <div class="modal-content">
+            <span class="cerrar">&times;</span>
+            <h2>ADEC</h2>
+            <img src="imagenes/ADEC.jpeg" class="img-fluid rounded mb-3" alt="ADEC">
+            <p></p>
+        </div>
+    </div>
+
+
+
+    <div id="modalDental" class="modal">
+        <div class="modal-content">
+            <span class="cerrar">&times;</span>
+            <h2>Estomatología</h2>
+            <img src="imagenes/Dental.jpeg" class="img-fluid rounded mb-3" alt="Estomatología">
+            <p></p>
+        </div>
+    </div>
+
+
+    <div id="modalRayosX" class="modal">
+        <div class="modal-content">
+            <span class="cerrar">&times;</span>
+            <h2>Servicio de Radiodiagnóstico</h2>
+            <img src="imagenes/Rayosx.jpeg" class="img-fluid rounded mb-3" alt="Servicio de Radiodiagnóstico">
+            <p></p>
+        </div>
+    </div>
+
+    <div id="modalArchivo" class="modal">
+        <div class="modal-content">
+            <span class="cerrar">&times;</span>
+            <h2>A.R.I.M.A.C.</h2>
+            <img src="imagenes/Archivo.jpeg" class="img-fluid rounded mb-3" alt="A.R.I.M.A.C.">
+            <p></p>
+        </div>
+    </div>
+
+
+
+    <!-- JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+    <script>
+    document.querySelectorAll('.abrirModalBtn').forEach(btn => {
+        btn.addEventListener('click', e => {
+        e.preventDefault();
+        const modalId = btn.getAttribute('data-modal');
+        const modal = document.getElementById(modalId);
+        if(modal) modal.style.display = 'block';
+        });
+    });
+
+    document.querySelectorAll('.cerrar').forEach(span => {
+        span.addEventListener('click', () => {
+        span.closest('.modal').style.display = 'none';
+        });
+    });
+
+    window.addEventListener('click', e => {
+        document.querySelectorAll('.modal').forEach(modal => {
+        if(e.target === modal) modal.style.display = 'none';
+        });
+    });
+
+    $(document).ready(function(){
+        $(".owl-carousel").owlCarousel({
+        loop:true,
+        margin:15,
+        responsiveClass:true,
+        responsive:{
+            0:{ items:1 },
+            576:{ items:2 },
+            768:{ items:3 },
+            992:{ items:4 }
+        }
+        });
+    });
+    </script>
+
+
+
+<div class="volver-inicio-container">
+    <a href="index.html" class="btn-volver">Volver al inicio</a>
+</div>
+
+
+   
+
+
+<!-- FOOTER -->
+<footer>
+    <div class="footer-container">
+        <div class="footer-logo">
+            <p></p>
+        </div>
+        <div class="footer-contact">
+            <h4>Contáctanos</h4>
+            <p>📧 <a href="http://www.imss.gob.mx/" class="link-imss">http://www.imss.gob.mx/</a></p>
+            <p>📞 +52 2414172100</p>
+            <p>📍 San Martin de Porres, San Martín de Porres, 90337 Cdad. de Apizaco, Tlax.</p>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <div class="footer-social">
+            <a href="#"><img src="imagenes/IMSS-Logo-tm.png" alt="Logo IMSS"></a>
+        </div>
+        <p>&copy; 2025 H.G.Z. C/M.F. No. 2, Todos los derechos reservados.</p>
+    </div>
+</footer>
+
+
+
+
+
+</body>
+
+<script>
+  // ================= MODALES =================
+  document.querySelectorAll('.abrirModalBtn').forEach(btn => {
+    btn.addEventListener('click', e => {
+      e.preventDefault();
+      const modalId = btn.getAttribute('data-modal');
+      const modal = document.getElementById(modalId);
+      if(modal) modal.style.display = 'block';
+    });
+  });
+
+  document.querySelectorAll('.cerrar').forEach(span => {
+    span.addEventListener('click', () => {
+      span.closest('.modal').style.display = 'none';
+    });
+  });
+
+  window.addEventListener('click', e => {
+    document.querySelectorAll('.modal').forEach(modal => {
+      if(e.target === modal) modal.style.display = 'none';
+    });
+  });
+
+  // ================= CARRUSEL =================
+  $(document).ready(function(){
+    $(".owl-carousel").owlCarousel({
+      loop: true,
+      margin: 25,
+      nav: true, // 🔥 Flechas activadas
+      dots: true,
+      autoplay: true,
+      autoplayTimeout: 3000,
+      autoplayHoverPause: true,
+
+      navText: [
+        '<span class="flecha izquierda">&#10094;</span>',
+        '<span class="flecha derecha">&#10095;</span>'
+      ],
+
+      responsive: {
+        0: { items: 1 },
+        576: { items: 2 },
+        768: { items: 3 },
+        992: { items: 4 }
+      }
+    });
+  });
+</script>
+
+
+
+</body>
+
+
+
+<script>
+window.onload = function() {
+    window.scrollTo(0, 0);
+};
+</script>
+
+
+
+<script>
+const navbar = document.querySelector('.navbar');
+const menuToggle = document.getElementById('menu-toggle');
+const navLinks = document.querySelector('.nav-links');
+
+let lastScrollTop = 0;
+
+// -------------------- AUTOHIDE NAVBAR --------------------
+window.addEventListener('scroll', function() {
+    let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+    if (scrollTop > lastScrollTop && scrollTop > 50) {
+        // Scroll down → oculta navbar
+        navbar.style.top = "-100px";
+    } else {
+        // Scroll up → muestra navbar
+        navbar.style.top = "0";
+    }
+
+    lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
+});
+
+// -------------------- CERRAR MENU AL HACER CLICK FUERA --------------------
+document.addEventListener('click', function(event) {
+    // Si el menú está abierto y el clic no es dentro del navbar ni del toggle
+    if (menuToggle.checked && !navbar.contains(event.target)) {
+        menuToggle.checked = false; // cierra el menú
+    }
+});
+</script>
+
+
+<!-- Botón de subir -->
+<button id="scrollToTop" title="Volver arriba">↑</button>
+
+<script>
+const scrollBtn = document.getElementById('scrollToTop');
+
+// Mostrar el botón después de cierto scroll
+window.addEventListener('scroll', () => {
+    if (window.scrollY > 300) {
+        scrollBtn.style.display = 'block';
+    } else {
+        scrollBtn.style.display = 'none';
+    }
+});
+
+// Acción de hacer scroll al top al hacer clic
+scrollBtn.addEventListener('click', () => {
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth' // desplazamiento suave
+    });
+});
+</script>
+
+
+
+</body>
+</html>

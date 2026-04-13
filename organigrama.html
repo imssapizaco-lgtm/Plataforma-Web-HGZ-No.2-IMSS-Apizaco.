@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Organigrama.css" />
+    
+    <title>Organigrama Institucional</title>
+</head>
+<body>
+    
+
+<nav class="navbar">
+  <div class="logo">
+    <img src="imagenes/IMSS-Logo-tm.png" alt="Logo Seguro Social">
+  </div>
+
+  <!-- Botón hamburguesa -->
+  <input type="checkbox" id="menu-toggle">
+  <label for="menu-toggle" class="hamburger">
+    <span></span>
+    <span></span>
+    <span></span>
+  </label>
+
+
+
+
+  <!-- Menú -->
+  <ul class="nav-links">
+  <li><a href="index.html" class="link">Bienvenida</a></li>
+  <li><a href="filosofia.html" class="link">Filosofía Institucional</a></li>
+  <li><a href="modelo.html" class="link">Modelo Institucional MC</a></li>
+  <li><a href="poblacion.html" class="link">Población Derechohabiente</a></li>
+
+  <li class="dropdown">
+    <a href="#">Conociendo las Instalaciones</a>
+    <ul class="submenu">
+      <li><a href="cartera.html">Cartera de Servicios</a></li>
+      <li><a href="recorrido.html">Recorrido Virtual</a></li>
+      <li><a href="organigrama.html">Organigrama</a></li>
+    </ul>
+  </li>
+
+  <li><a href="buzon.html" class="link">Buzón</a></li>
+</ul>
+</nav>
+
+
+
+
+
+<section class="organigrama-section">
+    <h1>Organigrama Institucional</h1>
+
+    <div class="organigrama-container">
+        <img src="imagenes/organigrama.jpeg" alt="Organigrama Institucional" id="imgOrganigrama">
+    </div>
+</section>
+
+<!-- Modal -->
+<div id="modalImg" class="modal">
+    <span class="cerrar">&times;</span>
+    <img class="modal-contenido" id="imgGrande">
+</div>
+
+
+
+
+
+
+
+<div class="volver-inicio-container">
+    <a href="index.html" class="btn-volver">Volver al inicio</a>
+</div>
+
+
+
+
+
+    <footer>
+  <div class="footer-container">
+    <div class="footer-logo">
+      <h2></h2>
+      <p></p>
+    </div>
+
+   
+
+    <div class="footer-contact">
+      <h4>Contáctanos</h4>
+     <p>📧 <a href="http://www.imss.gob.mx/" class="link-imss">http://www.imss.gob.mx/</a></p>
+      <p>📞 +52 2414172100</p>
+      <p>📍 San Martin de Porres, San Martín de Porres, 90337 Cdad. de Apizaco, Tlax.</p>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <div class="footer-social">
+      
+      <a href="#"><img src="imagenes/IMSS-Logo-tm.png" alt="Instagram"></a>
+     
+    </div>
+    <p>&copy; 2025 H.G.Z. C/M.F. No. 2, Todos los derechos reservados.</p>
+  </div>
+</footer>
+    
+
+
+<script>
+const img = document.getElementById("imgOrganigrama");
+const modal = document.getElementById("modalImg");
+const imgGrande = document.getElementById("imgGrande");
+const cerrar = document.querySelector(".cerrar");
+
+img.onclick = function() {
+    modal.style.display = "block";
+    imgGrande.src = this.src;
+}
+
+cerrar.onclick = function() {
+    modal.style.display = "none";
+}
+
+modal.onclick = function(e) {
+    if (e.target !== imgGrande) {
+        modal.style.display = "none";
+    }
+}
+</script>
+
+</body>
+</html>
